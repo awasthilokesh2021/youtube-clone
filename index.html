@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini youtube clone </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="bars">
+               <img src="bar.png" class="ba">
+            </div>
+            <div class="side-bar">
+               <i>
+                   <i class="fa fa-home"></i>
+               </i>
+               <p>Home</p>
+            </div>
+            <div class="side-bar">
+               <i>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 24px; height: 24px;"><g class="style-scope yt-icon"><path d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
+               </i>
+               <p>History</p>
+            </div>
+            <div class="side-bar">
+               <i>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 24px; height: 24px;"><g class="style-scope yt-icon"></g></svg>
+                   
+               </i>
+               <p>subscription</p>
+            </div>
+            <div class="side-bar">
+               <i>
+                   <yt-icon class="guide-icon style-scope ytd-guide-entry-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 24px; height: 24px;"><g class="style-scope yt-icon"><path d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z" class="style-scope yt-icon"></path></g></svg>
+   
+               </i>
+               <p>Library</p>
+            </div>
+       </aside>
+
+    <div class="main-container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="YouTube_Logo_2017.svg.png" alt="YouTube_Logo_2017">
+                </div>
+    
+                <div class="center-nav">
+                    <div class="search">
+                        <input type="text" class="inputbtn" id="search" placeholder="search vedio">
+                        <button>
+                            <img src="1024px-Search_Icon.svg.png" onclick="searchvedio()">
+                        </button>
+                    </div>
+                    <div class="mic">
+                        <img src="free-microphone-icon-342-thumb.png ">
+                    </div>
+                </div>
+                <div class="side-nav">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 30px; height: 30px;"><g class="style-scope yt-icon"><path d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z" class="style-scope yt-icon"></path></g></svg>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 30px; height: 25px;"><g class="style-scope yt-icon"><path d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z" class="style-scope yt-icon"></path></g></svg>  
+                <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="Avatar image" height="32" width="32" src="https://yt3.ggpht.com/yti/AHyvSCBU6weHwzMgvq-RXgAc9M08U1x7N-bmSmJyrFEGeg=s88-c-k-c0x00ffffff-no-rj-mo">    
+    
+             </nav>
+             <div class="tags">
+                <div class="tag dark">All</div>
+                <div class="tag light">Html</div>
+                <div class="tag light">CSS</div>
+                <div class="tag light">Javascript</div>
+                <div class="tag light">Music</div>
+                <div class="tag light">UPSC</div>
+                <div class="tag light">SSC</div>
+                <div class="tag light">Redmi c35</div>
+                <div class="tag light">kk art</div>
+             </div>
+        </header>
+
+        <section id="container-card">
+
+        </section>
+    </div>
+    
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
